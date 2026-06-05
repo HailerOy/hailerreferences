@@ -70,10 +70,22 @@
 
     /* --- HERO --- */
     .hero {
-      background: var(--blue);
+      position: relative;
+      background: url('../kuvat/Kirbeto.png') center/cover no-repeat;
       color: var(--white);
       padding: 64px 2rem;
       text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(32, 52, 74, 0.82);
+    }
+
+    .hero > * {
+      position: relative;
     }
 
     .hero-toimiala {
@@ -195,7 +207,7 @@
   </nav>
 
   <div class="hero">
-    <div class="hero-toimiala">Betoni &amp; Infrarakentaminen</div>
+    <div class="hero-toimiala">Valmistava teollisuus</div>
     <h1>Kirbeto</h1>
     <p class="hero-kuvaus">On keskitytty siihen mitä osataan tehdä — vuodesta 1959.</p>
   </div>
