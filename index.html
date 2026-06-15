@@ -188,6 +188,76 @@
 
     .empty-state p { font-size: 16px; }
 
+    /* --- LYHYET REFERENSSIT --- */
+    .refs-section {
+      background: var(--white);
+      border-top: 2px solid var(--offwhite);
+      padding: 64px 2rem;
+    }
+
+    .refs-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .refs-header {
+      margin-bottom: 40px;
+    }
+
+    .refs-header h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+
+    .refs-header p {
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .refs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .ref-card {
+      border-left: 4px solid var(--green);
+      background: var(--offwhite);
+      border-radius: 0 12px 12px 0;
+      padding: 28px 28px 28px 24px;
+    }
+
+    .ref-toimiala {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .ref-yritys {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
+
+    .ref-tagline {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .ref-teksti {
+      font-size: 14px;
+      color: #2e4a60;
+      line-height: 1.75;
+    }
+
     /* --- FOOTER --- */
     footer {
       background: var(--blue);
@@ -251,8 +321,73 @@
         </div>
       </a>
 
+      <!--
+      <a class="story-card" href="tarinat/kspt-group.html">
+        <div class="card-body">
+          <div class="card-toimiala">Teollisuuden eristys &amp; kunnossapito</div>
+          <div class="card-yritys">KSPT Group Oy</div>
+          <div class="card-kuvaus">TODO: Lyhyt kuvaus tarinasta.</div>
+          <div class="card-lue">Lue tarina →</div>
+        </div>
+      </a>
+      -->
+
       <!-- TARINAT LOPPUVAT TÄHÄN -->
 
+    </div>
+  </div>
+
+  <div class="refs-section">
+    <div class="refs-inner">
+      <div class="refs-header">
+        <h2>Luottavat Haileriin</h2>
+        <p>Organisaatioita ympäri Suomen, vuodesta toiseen.</p>
+      </div>
+      <div class="refs-grid">
+
+        <div class="ref-card">
+          <div class="ref-toimiala">Lastensuojelu &amp; sosiaalipalvelut</div>
+          <div class="ref-yritys">Perhekuntoutuskeskus Lauste ry</div>
+          <div class="ref-tagline">Lastensuojelun tukitoiminnot yhdessä paikassa</div>
+          <p class="ref-teksti">Lauste on yksityinen, voittoa tavoittelematon lastensuojelupalveluiden asiantuntija — yli 200 ammattilaista, toimipisteet Turussa ja Uudessakaupungissa, 27 palvelukuntaa Varsinais-Suomessa. Hailer rakennettiin räätälöitynä työtilana, jossa hallinnoidaan kaikkia sisäisiä tukitoimintoja: huolto- ja palvelupyynnöt, IT-asiat, tietoturvapoikkeamat ja lääkepoikkeamat kulkevat saman järjestelmän kautta — lomakkeelta käsittelyyn ja seurantaan. Asiakkaana vuodesta 2020.</p>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-toimiala">Henkilöstöpalvelut</div>
+          <div class="ref-yritys">Joblink Oy</div>
+          <div class="ref-tagline">Kasvava henkilöstövuokrausyritys pitää langat käsissä</div>
+          <p class="ref-teksti">Vuonna 2005 perustettu henkilöstöpalvelukonserni — Joblink henkilöstövuokraus, Joblink Hyllytys Oy ja Joblink Myymäläpalvelut Oy — liikevaihto noin 27,2 milj. € (2025). Toimisto koordinoi satoja vuokratyöntekijöitä ympäri Suomen kellon ympäri. Haileriin rakennettiin työnkulkuja henkilöstöprosesseille, asiakkuuksien hallintaan ja tehtävien seurantaan — kaikki tärkeä tieto yhdessä paikassa, oikeassa kontekstissa. Yksi Hailerin vanhimmista ja nopeimmin kasvaneista asiakkaista vuodesta 2016.</p>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-toimiala">Hammaslääkäriteknologia</div>
+          <div class="ref-yritys">Genera Oy / Finndent</div>
+          <div class="ref-tagline">Hammaslääkärilaitteiden valmistaja hallitsee myyntiverkostoa rajat ylittäen</div>
+          <p class="ref-teksti">Finndent Oy suunnittelee ja rakentaa hammaslääkärituolikokonaisuuksia Euroopan markkinoille — juuret 1970-luvulla. Kuuluu Genera-konserniin (liikevaihto n. 18 milj. €). Hailerissa konserni yhdisti eri juridisten yksiköiden — Genera Oy, Finndent Oy ja Finndent Suomi Oy — myynninhallinnan yhdelle alustalle: samat asiakkuudet, sama tieto, saumaton yhteistyö yli yritysrajojen. Käytössä vuodesta 2017.</p>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-toimiala">Tukkukauppa</div>
+          <div class="ref-yritys">HW-Hunt Oy</div>
+          <div class="ref-tagline">Metsästyksen ja urheiluammunnan tukkukauppias kasvaa järjestelmällisesti</div>
+          <p class="ref-teksti">Vuonna 1989 perustettu tukkukaupan palveluyritys Kokkolasta — maahantuo ja myy yli 20 tuotemerkkiä metsästykseen, ampumaurheiluun ja vapaa-aikaan. Haileriin rakennettiin kahdeksan työnkulkua kattamaan myynti, toimitukset ja hallinto. Toimitusjohtaja Kai Helisten tiivistää: "Hailer tuo rakenteen toimintaan. Kaikki sisäinen viestintä on nyt paikallaan, ja johto saa hyvän kokonaiskuvan koko organisaatiosta yhdellä silmäyksellä." Asiakkaana vuodesta 2018.</p>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-toimiala">Vähittäiskauppa</div>
+          <div class="ref-yritys">Gigantti (Porvoon Kodintekniikka Oy)</div>
+          <div class="ref-tagline">B2B-myyntitiimi hallitsee asiakkuuksia räätälöidyllä CRM:llä</div>
+          <p class="ref-teksti">Porvoon Kodintekniikka Oy operoi Gigantti-myymälöitä Porvoossa, Salossa, Järvenpäässä ja Lohjalla. B2B-myyntitiimin asiakkuuksien hallinta vaati oman ratkaisun: Hailer räätälöitiin asiakkuuksien seurantaan, myyntiprosesseihin ja tiimin yhteistyöhön — kevyt ja käytännöllinen, sopii erikokoisen jälleenmyyjäorganisaation arkeen ilman ylimääräistä monimutkaisuutta. Asiakkuus alkanut 2022.</p>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-toimiala">Lakipalvelut</div>
+          <div class="ref-yritys">Asianajotoimisto Heinonkoski Oy</div>
+          <div class="ref-tagline">Kasvava lakitoimisto digitalisoi asiakkuudenhallintansa</div>
+          <p class="ref-teksti">Vuonna 2019 perustettu lakitoimisto, erikoistunut yksityisyrittäjiin, kuluttajaoikeuteen ja autoalan juridisiin kysymyksiin. Aloitti Hailerin freemium-pohjalta suoraan luottokorttimaksulla — juuri sellainen matala kynnys, joka sopii kasvavalle pienyritykselle. Toimisto on kasvanut 2 henkilöstä 5:een ja liikevaihto lähes kolminkertaistunut yhteistyön alusta. Liikevaihto 2025: 445 000 € (+33,3 %). Asiakkaana vuodesta 2021.</p>
+        </div>
+
+      </div>
     </div>
   </div>
 

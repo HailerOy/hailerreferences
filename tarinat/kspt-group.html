@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TODO: Lyhyt kuvaus KSPT Group Oy:n tarinasta Hailerin kanssa.">
+  <meta property="og:title" content="KSPT Group Oy – Asiakastarina – Hailer">
+  <meta property="og:description" content="TODO: Lyhyt kuvaus KSPT Group Oy:n tarinasta Hailerin kanssa.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hailerreferences.com/tarinat/kspt-group.html">
+  <meta property="og:image" content="https://www.hailerreferences.com/kuvat/hailer-logo.png">
+  <meta property="og:site_name" content="Hailer References">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.hailerreferences.com/tarinat/kspt-group.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KSPT Group Oy – Asiakastarina – Hailer">
+  <meta name="twitter:description" content="TODO: Lyhyt kuvaus KSPT Group Oy:n tarinasta Hailerin kanssa.">
+  <meta name="twitter:image" content="https://www.hailerreferences.com/kuvat/hailer-logo.png">
+  <title>KSPT Group Oy – Asiakastarina – Hailer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:    #20344A;
+      --green:   #20A250;
+      --offwhite:#F3F4F7;
+      --white:   #ffffff;
+      --muted:   #5a6a7a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Nunito', Arial, sans-serif;
+      background: var(--offwhite);
+      color: var(--blue);
+    }
+
+    /* --- NAVIGAATIO --- */
+    nav {
+      background: var(--white);
+      border-bottom: 2px solid var(--offwhite);
+      padding: 0 2rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--green); }
+
+    .nav-back {
+      font-size: 14px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .nav-back:hover { color: var(--green); }
+
+    /* --- HERO --- */
+    .hero {
+      background: var(--blue);
+      color: var(--white);
+      padding: 64px 2rem;
+      text-align: center;
+    }
+
+    .hero-toimiala {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero-kuvaus {
+      font-size: 17px;
+      color: #a8bcc8;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* --- SISÄLTÖ --- */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 2rem;
+    }
+
+    .content h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--blue);
+      margin: 40px 0 16px;
+    }
+
+    .content h2:first-child { margin-top: 0; }
+
+    .content p {
+      font-size: 16px;
+      color: #2e4a60;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    /* Lainaus */
+    .quote {
+      background: var(--white);
+      border-left: 4px solid var(--green);
+      border-radius: 0 12px 12px 0;
+      padding: 28px 32px;
+      margin: 40px 0;
+    }
+
+    .quote-teksti {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--blue);
+      line-height: 1.6;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .quote-henkilo {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* Tulokset */
+    .results {
+      background: var(--blue);
+      color: var(--white);
+      border-radius: 12px;
+      padding: 40px;
+      margin: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 32px;
+      text-align: center;
+    }
+
+    .result-luku {
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .result-teksti {
+      font-size: 14px;
+      color: #a8bcc8;
+      line-height: 1.4;
+    }
+
+    /* --- TAKAISIN-PAINIKE --- */
+    .back-btn {
+      display: inline-block;
+      margin-top: 48px;
+      padding: 12px 28px;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+
+    .back-btn:hover { background: #178a42; }
+
+    /* --- FOOTER --- */
+    footer {
+      background: var(--blue);
+      color: #a8bcc8;
+      text-align: center;
+      padding: 32px 2rem;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--green);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="../index.html">Hailer <span>●</span></a>
+    <a class="nav-back" href="../index.html">← Kaikki tarinat</a>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-toimiala">Teollisuuden eristys &amp; kunnossapito</div>
+    <h1>KSPT Group Oy</h1>
+    <p class="hero-kuvaus">TODO: Lyhyt yhden lauseen kuvaus siitä, mitä KSPT Group saavutti Hailerin avulla.</p>
+  </div>
+
+  <div class="content">
+
+    <!-- TODO: Taustatarina -->
+    <h2>Tausta</h2>
+    <p>TODO: Kerro tässä asiakkaan lähtötilanteesta. Millainen organisaatio on kyseessä ja mikä oli haaste?</p>
+
+    <!-- TODO: Haaste -->
+    <h2>Haaste</h2>
+    <p>TODO: Kuvaile ongelma, johon KSPT Group haki ratkaisua.</p>
+
+    <!-- TODO: Lainaus -->
+    <div class="quote">
+      <div class="quote-teksti">"TODO: Asiakkaan lainaus."</div>
+      <div class="quote-henkilo">TODO: Etunimi Sukunimi, Titteli, KSPT Group Oy</div>
+    </div>
+
+    <!-- TODO: Ratkaisu -->
+    <h2>Ratkaisu</h2>
+    <p>TODO: Kerro miten Hailer otettiin käyttöön ja mitä rakennettiin.</p>
+
+    <!-- TODO: Tulokset — päivitä luvut -->
+    <div class="results">
+      <div>
+        <div class="result-luku">TODO</div>
+        <div class="result-teksti">TODO</div>
+      </div>
+      <div>
+        <div class="result-luku">TODO</div>
+        <div class="result-teksti">TODO</div>
+      </div>
+      <div>
+        <div class="result-luku">TODO</div>
+        <div class="result-teksti">TODO</div>
+      </div>
+    </div>
+
+    <!-- TODO: Lopputulos -->
+    <h2>Lopputulos</h2>
+    <p>TODO: Yhteenveto — mitä KSPT Group saavutti ja miten yhteistyö jatkuu.</p>
+
+    <a class="back-btn" href="../index.html">← Takaisin kaikkiin tarinoihin</a>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 <a href="https://www.hailer.com">Hailer Oy</a> &nbsp;|&nbsp; Rihkamatori 2, 06100 Porvoo</p>
+  </footer>
+
+</body>
+</html>
