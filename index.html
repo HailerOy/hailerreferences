@@ -179,6 +179,66 @@
       color: var(--green);
     }
 
+    .about-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 64px;
+    }
+
+    .about-content {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 40px 32px;
+      border-top: 4px solid var(--green);
+    }
+
+    .about-content h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 24px;
+    }
+
+    .about-content p {
+      font-size: 16px;
+      color: #2e4a60;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    .about-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+
+    .cta-button:hover {
+      background: #178a42;
+    }
+
+    .cta-button.secondary {
+      background: var(--white);
+      color: var(--blue);
+      border: 1px solid #d9e1e8;
+    }
+
+    .cta-button.secondary:hover {
+      background: var(--offwhite);
+    }
+
     /* Tyhjä tila */
     .empty-state {
       text-align: center;
@@ -277,13 +337,13 @@
 
   <nav>
     <a class="nav-logo" href="index.html">Hailer <span>●</span></a>
-    <a class="nav-link" href="https://www.hailer.com">hailer.com</a>
+    <a class="nav-link" href="https://docs.hailer.com">hailer.com</a>
   </nav>
 
   <div class="hero">
     <div class="hero-label">Referenssit</div>
     <h1>Asiakastarinat</h1>
-    <p>Lue miten organisaatiot ympäri Suomen ovat kehittäneet toimintaansa Hailerin avulla.</p>
+    <p>Hailer on prosessialusta, joka yhdistää työnkulut, projektit ja viestinnän yhteen paikkaan. Asiakkaan prosessit ohjaavat järjestelmää, ei toisin päin. Lue miten organisaatiot ympäri Suomen ovat kehittäneet toimintaansa Hailerin avulla.</p>
   </div>
 
   <div class="stories-section">
@@ -333,6 +393,20 @@
 
       <!-- TARINAT LOPPUVAT TÄHÄN -->
 
+    </div>
+  </div>
+
+  <div class="about-section">
+    <div class="about-content">
+      <h2>Mikä Hailer on</h2>
+      <p>Hailer on prosessialusta, joka yhdistää työnkulut, projektit ja viestinnän yhteen paikkaan. Ei erillisiä järjestelmiä eikä raskasta IT-projektia.</p>
+      <p>Asiakkaan prosessit ohjaavat järjestelmää, ei toisin päin. Kuvauksen tekee se, joka työn tuntee — Hailer Studio, sisäinen tekoäly, rakentaa siitä ensimmäisen version minuuteissa. Työnkulut, kentät ja näkymät muokataan ilman koodaamista, ja muutokset tehdään silloin kun toiminta muuttuu — ei seuraavassa järjestelmähankkeessa.</p>
+      <p>Hailer on niille, joille valmisohjelmisto ei riitä eikä alusta asti räätälöity kehitysprojekti kannata. Asiakkaita on kaikilla toimialoilla: valmistavassa teollisuudessa, palveluissa, logistiikassa, kulttuuri- ja tapahtuma-alalla sekä julkisella sektorilla.</p>
+      <p>Dokumentaatiosta näet miten Hailer toimii käytännössä: ohjeet, työnkulkujen rakentaminen, rajapinnat ja kehittäjäaineistot. Marketplacesta löydät valmiit työnkulkupohjat, integraatiot ja palvelupaketit, jotka voi asentaa suoraan omaan työtilaan.</p>
+      <div class="about-buttons">
+        <a class="cta-button" href="https://docs.hailer.com">Tutustu dokumentaatioon</a>
+        <a class="cta-button secondary" href="https://apps.hailer.com/55703b133131611a0def6221/6620d1850271340451e65bad/index.html#/products">Selaa Marketplacea</a><!-- TODO: vaihda lyhyeen osoitteeseen kun marketplace.hailer.com -ohjaus on tehty. Nykyinen osoite sisältää työtilan ja sovelluksen tunnukset ja hajoaa jos sovellus siirretään. -->
+      </div>
     </div>
   </div>
 
@@ -392,6 +466,7 @@
 
   <footer>
     <p>&copy; 2026 <a href="https://www.hailer.com">Hailer Oy</a> &nbsp;|&nbsp; Rihkamatori 2, 06100 Porvoo</p>
+    <p>Hailer on prosessialusta, joka yhdistää työnkulut, projektit ja viestinnän yhteen paikkaan.</p>
   </footer>
 
 <script type="application/ld+json">
