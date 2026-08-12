@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
+  <!-- ============================================================
+       UUDEN ASIAKASTARINAN POHJA
+
+       Korvaa nämä paikkamerkit koko tiedostosta ennen julkaisua:
+
+         YRITYKSEN NIMI     yrityksen nimi sellaisena kuin se kirjoitetaan
+         TIEDOSTONIMI       tämän tiedoston nimi ilman .html-päätettä
+         LYHYT KUVAUS       1-2 lausetta, sama teksti description-, og- ja
+                            twitter-kentissä sekä JSON-LD:ssä
+         TOIMIALAKUVAUS     asiakkaan toimiala JSON-LD:n about-kenttään
+         VVVV-KK-PP         julkaisupäivä muodossa 2026-08-12
+         KUVATIEDOSTO.jpg   tarinan kuva kuvat/-kansiossa
+
+       JA MUISTA TÄMÄ: vaihda alla oleva robots-tagi muotoon
+       content="index, follow". Jos se jää noindex-tilaan, sivu ei
+       koskaan näy hakukoneessa eikä siitä huomaa mitään.
+
+       publisher-osio JSON-LD:ssä pysyy sellaisenaan, sitä ei muuteta.
+       ============================================================ -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LYHYT KUVAUS">
+  <meta property="og:title" content="YRITYKSEN NIMI – Asiakastarina – Hailer">
+  <meta property="og:description" content="LYHYT KUVAUS">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hailerreferences.com/tarinat/TIEDOSTONIMI.html">
+  <meta property="og:image" content="https://www.hailerreferences.com/kuvat/KUVATIEDOSTO.jpg">
+  <meta property="og:site_name" content="Hailer References">
   <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://www.hailerreferences.com/tarinat/TIEDOSTONIMI.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="YRITYKSEN NIMI – Asiakastarina – Hailer">
+  <meta name="twitter:description" content="LYHYT KUVAUS">
+  <meta name="twitter:image" content="https://www.hailerreferences.com/kuvat/KUVATIEDOSTO.jpg">
   <title>YRITYKSEN NIMI – Asiakastarina – Hailer</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
@@ -190,27 +221,25 @@
       text-decoration: none;
     }
   </style>
-  <!-- Täytä nämä kentät kun teet uuden tarinan tämän pohjalta. Älä jätä ASIAKAS- tai
-       VVVV-KK-PP -paikkamerkkejä julkaistulle sivulle. publisher-osio pysyy sellaisenaan. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "ASIAKAS Oy – Asiakastarina – Hailer",
-    "description": "ASIAKKAAN LYHYT KUVAUS, sama teksti kuin meta description.",
-    "url": "https://www.hailerreferences.com/tarinat/ASIAKAS.html",
+    "headline": "YRITYKSEN NIMI – Asiakastarina – Hailer",
+    "description": "LYHYT KUVAUS",
+    "url": "https://www.hailerreferences.com/tarinat/TIEDOSTONIMI.html",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.hailerreferences.com/tarinat/ASIAKAS.html"
+      "@id": "https://www.hailerreferences.com/tarinat/TIEDOSTONIMI.html"
     },
     "inLanguage": "fi",
     "datePublished": "VVVV-KK-PP",
     "dateModified": "VVVV-KK-PP",
-    "image": "https://www.hailerreferences.com/kuvat/hailer-logo.png",
+    "image": "https://www.hailerreferences.com/kuvat/KUVATIEDOSTO.jpg",
     "about": {
       "@type": "Organization",
-      "name": "ASIAKAS Oy",
-      "description": "ASIAKKAAN TOIMIALA JA LYHYT KUVAUS."
+      "name": "YRITYKSEN NIMI",
+      "description": "TOIMIALAKUVAUS"
     },
     "author": {
       "@type": "Organization",
