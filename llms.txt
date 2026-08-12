@@ -19,7 +19,8 @@
 
 ## Hailer Oy
 
-Hailer on suomalainen yritystyökalu, joka yhdistää asiakkuudenhallinnan, projektinhallinnan ja tiimin kommunikoinnin yhdeksi kokonaisuudeksi.
+Hailer on prosessialusta, joka yhdistää työnkulut, projektit ja viestinnän yhteen paikkaan.
+Asiakkaan prosessit ohjaavat järjestelmää, ei toisin päin.
 
 Hailer Oy
 Rihkamatori 2, 06100 Porvoo
@@ -28,3 +29,4 @@ https://www.hailer.com
 ## Lisätietoa
 
 - Referenssisivu: https://www.hailerreferences.com
+- Tuotesivu: https://www.hailervellamo.com
