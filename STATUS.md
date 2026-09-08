@@ -1,6 +1,6 @@
 # STATUS — asiakastarinat
 
-Päivitetty: 2026-09-08 13:10
+Päivitetty: 2026-09-08 18:00
 
 ## Kesken nyt
 
@@ -22,6 +22,13 @@ Viimeisin commit (4f1f933) lisäsi Google Search Console -vahvistustunnisteen.
 
 **1. Odota asiakkaan ja Pian kommentit** Siskon Siivouksen tarinaan.
 
+✅ **Kuvat ovat valmiina** *(8.9., committoimatta kunnes tarina on hyväksytty)*:
+- `kuvat/siskon-siivous.jpg` — **1600 × 1067**, pääkuva. Laura Sorri toimitti
+  alkuperäisen 6720 × 4480; skaalattu sivuston mittaan *(sama kuin
+  `viestinta-ruuti.jpg`, ei rajausta koska lähde on jo 3:2)*
+- `kuvat/siskon-siivous-{robert-tedre,sara-koskivirta,vesa-fagerlund}.jpg` — 300 × 300
+  neliöt sitaattien viereen
+
 **2. Kun hyväksytty: tee `tarinat/siskon-siivous.html`** pohjasta `malli.html` ja aja
 menetelmän vaihe 6 — vakiokuvaus sanasta sanaan samana kolmessa paikassa *(näkyvä
 teksti, `llms.txt`, JSON-LD)*, `Article` + `about: Organization`, neljä kuvaviittausta,
@@ -35,13 +42,6 @@ muotoon *«Siska Rakoski Virta»*.
 
 ## Odottaa
 
-- **Pääkuvan isompi versio** — pyydetty **Laura Sorrilta, Siskon Siivous** 8.9.
-  *(Jaana 8.9.)*. ⭐ **Sama talo kuin tarinan hyväksyntä** — jos toinen viivästyy,
-  molemmat kannattaa muistuttaa samalla kertaa.
-  Tiedosto `_93A0220.JPG`, nykyinen 1024 × 683, **tarvitaan vähintään 1200 px**
-  koska sama kuva menee `og:image`-jakokuvaksi. Henkilökuvia ei pyydetty uusiksi —
-  ne ovat kunnossa pieninä.
-  todenna: `python3 -c "from PIL import Image; print(Image.open('kuvat/siskon-siivous-hero.jpg').size)"` → ≥1200 = tullut
 - **Siskon Siivouksen hyväksyntä** — tarina lähetetty 8.9.2026 asiakkaalle ja Pialle
   *(Jaana 8.9.)*. Haastatteluaineisto on koossa: Robert, Vesa, Sara.
   todenna: `ls hailer-gtm/TARINA_SISKON_SIIVOUS_LAHETETTY.md`
