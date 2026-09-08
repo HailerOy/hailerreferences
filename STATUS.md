@@ -35,7 +35,9 @@ muotoon *«Siska Rakoski Virta»*.
 
 ## Odottaa
 
-- **Pääkuvan isompi versio** — pyydetty markkinoinnista 8.9. *(Jaana 8.9.)*.
+- **Pääkuvan isompi versio** — pyydetty **Laura Sorrilta, Siskon Siivous** 8.9.
+  *(Jaana 8.9.)*. ⭐ **Sama talo kuin tarinan hyväksyntä** — jos toinen viivästyy,
+  molemmat kannattaa muistuttaa samalla kertaa.
   Tiedosto `_93A0220.JPG`, nykyinen 1024 × 683, **tarvitaan vähintään 1200 px**
   koska sama kuva menee `og:image`-jakokuvaksi. Henkilökuvia ei pyydetty uusiksi —
   ne ovat kunnossa pieninä.
