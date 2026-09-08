@@ -1,6 +1,6 @@
 # STATUS — asiakastarinat
 
-Päivitetty: 2026-09-08 12:30
+Päivitetty: 2026-09-08 13:10
 
 ## Kesken nyt
 
@@ -35,6 +35,11 @@ muotoon *«Siska Rakoski Virta»*.
 
 ## Odottaa
 
+- **Pääkuvan isompi versio** — pyydetty markkinoinnista 8.9. *(Jaana 8.9.)*.
+  Tiedosto `_93A0220.JPG`, nykyinen 1024 × 683, **tarvitaan vähintään 1200 px**
+  koska sama kuva menee `og:image`-jakokuvaksi. Henkilökuvia ei pyydetty uusiksi —
+  ne ovat kunnossa pieninä.
+  todenna: `python3 -c "from PIL import Image; print(Image.open('kuvat/siskon-siivous-hero.jpg').size)"` → ≥1200 = tullut
 - **Siskon Siivouksen hyväksyntä** — tarina lähetetty 8.9.2026 asiakkaalle ja Pialle
   *(Jaana 8.9.)*. Haastatteluaineisto on koossa: Robert, Vesa, Sara.
   todenna: `ls hailer-gtm/TARINA_SISKON_SIIVOUS_LAHETETTY.md`
