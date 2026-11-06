@@ -175,6 +175,30 @@
     .story-img { margin: 32px auto; text-align: center; }
     .story-img img { max-width: 100%; width: 420px; height: auto; border-radius: 12px; }
 
+    .cta-box {
+      background: var(--white);
+      border-left: 4px solid var(--green);
+      border-radius: 0 12px 12px 0;
+      padding: 28px 32px;
+      margin: 48px 0 0;
+    }
+
+    .cta-box p { margin-bottom: 16px; }
+
+    .cta-btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+
+    .cta-btn:hover { background: #178a42; }
+
     .company-info {
       margin-top: 48px;
       padding-top: 32px;
@@ -303,7 +327,6 @@
 
     <div class="quote">
       <div class="quote-teksti">"Nyt on aika semmoinen valmis olo."</div>
-      <div class="quote-henkilo">Mila Sjöblom, Vantaan kaupunki</div>
     </div>
 
     <p>Valmis ei kuitenkaan tarkoita muuttumatonta. Uimahalliarki, palvelut ja toimintaympäristö muuttuvat jatkuvasti. Hailer suunnitteli Vellamon rakenteen niin, että Vantaa voi mukauttaa järjestelmää itse myös käyttöönoton jälkeen. Kaikki muutokset eivät vaadi uutta kehitysprojektia: osa onnistuu Vantaan omin voimin, osassa tarvitaan Hailer-tiimin apua ja osa vaatii laajempaa jatkokehitystä. Mila pitää tärkeänä sitä, ettei jokaista poikkeusta varten tarvitse rakentaa kokonaan uutta ratkaisua.</p>
@@ -316,7 +339,6 @@
 
     <div class="quote">
       <div class="quote-teksti">"Tieto ei ole niin repaleista eikä niin manuaalista."</div>
-      <div class="quote-henkilo">Mila Sjöblom, Vantaan kaupunki</div>
     </div>
 
     <p>Muutos näkyy vielä konkreettisemmin altaan reunalla. Oppilaiden taitotasoja voidaan päivittää uintijakson aikana suoraan samaan kokonaisuuteen ja tieto on tarvittaessa myös sijaisen käytettävissä.</p>
@@ -337,7 +359,6 @@
 
     <div class="quote">
       <div class="quote-teksti">"Virheiden minimoiminen on tärkeä osa toiminnan tehostamista, sillä niistä syntyy aina kustannuksia ja lisätyötä."</div>
-      <div class="quote-henkilo">Mila Sjöblom, Vantaan kaupunki</div>
     </div>
 
     <h2>Data kertoo, mihin opetusta tarvitaan</h2>
@@ -346,7 +367,6 @@
 
     <div class="quote">
       <div class="quote-teksti">"Se on nopeaa, tehokasta, reaaliaikaista ja luotettavaa."</div>
-      <div class="quote-henkilo">Mila Sjöblom, Vantaan kaupunki</div>
     </div>
 
     <p>Samalla seurattavan tiedon määrä on kasvanut. Enää ei tarkastella pelkästään osallistujamääriä tai sitä, kuinka moni lapsi ui pienessä tai isossa altaassa. Vellamosta voidaan nähdä esimerkiksi, missä vaiheessa oppilas siirtyy taitotasolta toiselle.</p>
@@ -363,7 +383,6 @@
 
     <div class="quote">
       <div class="quote-teksti">"Mulla oli puhelin kädessä ja olin valmiina vastaamaan kysymyksiin, että miten tää toimii, tää ei nyt mee — ja kukaan ei soittanut mulle."</div>
-      <div class="quote-henkilo">Mila Sjöblom, Vantaan kaupunki</div>
     </div>
 
     <p>Se on hänelle yksi onnistumisen mittareista. Kun järjestelmä toimii arjessa, uimaopettajien ei tarvitse keskeyttää työtään selvittääkseen, miten jokin asia tehdään eikä esihenkilön päivä täyty ad hoc -ongelmien ratkaisemisesta.</p>
@@ -378,7 +397,6 @@
 
     <div class="quote">
       <div class="quote-teksti">"Kyllä mä suhtaudun tosi myönteisesti teknologiaan ja on hienoa, että Vantaalla kokeillaan rohkeasti uusia mahdollisuuksia, kuten sähköistä järjestelmää ja opetusnäyttöjä. Ne vakiinnutetaan osaksi toimintaa, kun niistä on selkeästi hyötyä arjen työskentelyssä"</div>
-      <div class="quote-henkilo">Mila Sjöblom, Vantaan kaupunki</div>
     </div>
 
     <h2>Ensin oma prosessi, sitten järjestelmä</h2>
@@ -395,7 +413,6 @@
 
     <div class="quote">
       <div class="quote-teksti">"Jos siinä on jo heti jotain kehitettävää, niin muutokset kannattaisi miettiä valmiiksi ennen kun aletaan rakentamaan järjestelmää."</div>
-      <div class="quote-henkilo">Mila Sjöblom, Vantaan kaupunki</div>
     </div>
 
     <p>Myös tulevaa kannattaa yrittää hahmottaa edes muutaman askeleen päähän. Kaikkea ei voi ennustaa, mutta jos tiedetään, että uimahalleja remontoidaan, palvelut laajenevat tai toimintatavat muuttuvat, järjestelmän pitäisi pystyä taipumaan näihin tilanteisiin.</p>
@@ -404,10 +421,14 @@
 
     <div class="quote">
       <div class="quote-teksti">"Suhtautuu vaan avoimin mielin."</div>
-      <div class="quote-henkilo">Mila Sjöblom, Vantaan kaupunki</div>
     </div>
 
     <p>Kaikkien ei tarvitse innostua tabletista ensimmäisenä päivänä. Työntekijät saadaan mukaan, kun muutokseen annetaan riittävästi tukea ja aikaa. Lopulta kyse ei ole vain järjestelmän käyttöönotosta vaan siitä, että järjestelmä palvelee työtä, jota ihmiset oikeasti tekevät.</p>
+
+    <div class="cta-box">
+      <p>Haluatko tutustua uinninhallintajärjestelmä Vellamoon? Se löytyy täältä.</p>
+      <a class="cta-btn" href="https://www.hailervellamo.com">Tutustu Vellamoon →</a>
+    </div>
 
     <div class="company-info">
       Vantaan kaupunki &nbsp;|&nbsp; <a href="https://www.vantaa.fi" style="color: var(--green); text-decoration: none;">vantaa.fi</a> &nbsp;|&nbsp; Hailerin asiakas vuodesta 2024
