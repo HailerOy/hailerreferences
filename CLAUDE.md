@@ -11,6 +11,18 @@ Muokkaat tiedostoa ja se on valmis — ei `npm install`, ei käännösvaihetta.
 - **Julkaistu:** `https://www.hailerreferences.com` (Vercel)
 - **GitHub:** `HailerOy/hailerreferences`
 - **Julkaisu:** push `main`-haaraan → Vercel julkaisee automaattisesti
+- 🔴 **Toinen, tarpeeton julkaisuväylä: GitHub Pages.** Repossa on Pages päällä
+  (`legacy`, lähde `main`/`/`), joten **jokainen push käynnistää myös «pages build and
+  deployment» -ajon**, joka julkaisee kopion osoitteeseen
+  `haileroy.github.io/hailerreferences/`. **Se ei ole oikea sivusto** — `hailerreferences.com`
+  tulee Vercelistä *(vastauksen otsikko `server: Vercel`)*. ⚠️ **Tämä väylä ei näy
+  `.github/workflows/`-kansiossa** *(Pagesin oma ajo, ei tiedostoa)*, eli «ei workflow-tiedostoja»
+  ei todista ettei muita julkaisuväyliä ole. Todenna: `gh api repos/HailerOy/hailerreferences/pages`
+  · `gh run list -R HailerOy/hailerreferences -L 5`.
+  **6.11.2026:** Pagesin deploy-vaihe jäi tilaan `updating_pages` ja kaatui aikakatkaisuun
+  *(GitHubin puolen vika, build onnistui)* → sähköposti «Some jobs were not successful».
+  **Oikea sivu ei kärsinyt.** Kaatuminen ei vaadi toimenpidettä; Pagesin voi kytkeä pois
+  repon asetuksista (Settings → Pages) jos kopiota ei käytetä — päätös ei kuulu viestinnälle.
 
 ## Rakenne
 
