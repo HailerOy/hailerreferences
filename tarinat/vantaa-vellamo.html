@@ -175,30 +175,6 @@
     .story-img { margin: 32px auto; text-align: center; }
     .story-img img { max-width: 100%; width: 420px; height: auto; border-radius: 12px; }
 
-    .cta-box {
-      background: var(--white);
-      border-left: 4px solid var(--green);
-      border-radius: 0 12px 12px 0;
-      padding: 28px 32px;
-      margin: 48px 0 0;
-    }
-
-    .cta-box p { margin-bottom: 16px; }
-
-    .cta-btn {
-      display: inline-block;
-      padding: 12px 28px;
-      background: var(--green);
-      color: var(--white);
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 15px;
-      text-decoration: none;
-      transition: background .2s;
-    }
-
-    .cta-btn:hover { background: #178a42; }
-
     .company-info {
       margin-top: 48px;
       padding-top: 32px;
@@ -208,15 +184,22 @@
     }
 
     /* --- TAKAISIN-PAINIKE --- */
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 48px;
+    }
+
     .back-btn {
       display: inline-block;
-      margin-top: 48px;
-      padding: 12px 28px;
+      margin-top: 0;
+      padding: 12px 20px;
       background: var(--green);
       color: var(--white);
       border-radius: 8px;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 14px;
       text-decoration: none;
       transition: background .2s;
     }
@@ -425,16 +408,14 @@
 
     <p>Kaikkien ei tarvitse innostua tabletista ensimmäisenä päivänä. Työntekijät saadaan mukaan, kun muutokseen annetaan riittävästi tukea ja aikaa. Lopulta kyse ei ole vain järjestelmän käyttöönotosta vaan siitä, että järjestelmä palvelee työtä, jota ihmiset oikeasti tekevät.</p>
 
-    <div class="cta-box">
-      <p>Haluatko tutustua uinninhallintajärjestelmä Vellamoon? Se löytyy täältä.</p>
-      <a class="cta-btn" href="https://www.hailervellamo.com">Tutustu Vellamoon →</a>
-    </div>
-
     <div class="company-info">
       Vantaan kaupunki &nbsp;|&nbsp; <a href="https://www.vantaa.fi" style="color: var(--green); text-decoration: none;">vantaa.fi</a> &nbsp;|&nbsp; Hailerin asiakas vuodesta 2024
     </div>
 
-    <a class="back-btn" href="../index.html">← Takaisin kaikkiin tarinoihin</a>
+    <div class="btn-row">
+      <a class="back-btn" href="../index.html">← Takaisin kaikkiin tarinoihin</a>
+      <a class="back-btn" href="https://www.hailervellamo.com">Tutustu uinninhallintajärjestelmä Vellamoon</a>
+    </div>
 
   </div>
 
