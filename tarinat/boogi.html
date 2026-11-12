@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="description" content="Boogi rakensi tapahtumatalojen ohjelmiston Hailerin päälle. Eeka Mäkynen kertoo, miksi oman teknologia-alustan sijaan kannatti keskittyä omaan tuotteeseen ja asiakkaisiin.">
+  <meta property="og:title" content="Boogi – Asiakastarina – Hailer">
+  <meta property="og:description" content="Boogi rakensi tapahtumatalojen ohjelmiston Hailerin päälle. Eeka Mäkynen kertoo, miksi oman teknologia-alustan sijaan kannatti keskittyä omaan tuotteeseen ja asiakkaisiin.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.hailerreferences.com/tarinat/boogi.html">
+  <meta property="og:image" content="https://www.hailerreferences.com/kuvat/boogi-hero.jpg">
+  <meta property="og:site_name" content="Hailer References">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.hailerreferences.com/tarinat/boogi.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Boogi – Asiakastarina – Hailer">
+  <meta name="twitter:description" content="Boogi rakensi tapahtumatalojen ohjelmiston Hailerin päälle. Eeka Mäkynen kertoo, miksi oman teknologia-alustan sijaan kannatti keskittyä omaan tuotteeseen ja asiakkaisiin.">
+  <meta name="twitter:image" content="https://www.hailerreferences.com/kuvat/boogi-hero.jpg">
+  <title>Boogi – Asiakastarina – Hailer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --blue:    #20344A;
+      --green:   #20A250;
+      --offwhite:#F3F4F7;
+      --white:   #ffffff;
+      --muted:   #5a6a7a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Nunito', Arial, sans-serif;
+      background: var(--offwhite);
+      color: var(--blue);
+    }
+
+    /* --- NAVIGAATIO --- */
+    nav {
+      background: var(--white);
+      border-bottom: 2px solid var(--offwhite);
+      padding: 0 2rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--blue);
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--green); }
+
+    .nav-back {
+      font-size: 14px;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .nav-back:hover { color: var(--green); }
+
+    /* --- HERO --- */
+    .hero {
+      position: relative;
+      background: url('../kuvat/boogi-hero.jpg') center 30%/cover no-repeat;
+      color: var(--white);
+      padding: 64px 2rem;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(32, 52, 74, 0.82);
+    }
+
+    .hero > * {
+      position: relative;
+    }
+
+    .hero-toimiala {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .hero-kuvaus {
+      font-size: 17px;
+      color: #a8bcc8;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* --- SISÄLTÖ --- */
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 2rem;
+    }
+
+    .content h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--blue);
+      margin: 40px 0 16px;
+    }
+
+    .content h2:first-child { margin-top: 0; }
+
+    .content p {
+      font-size: 16px;
+      color: #2e4a60;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    /* Lainaus */
+    .quote {
+      background: var(--white);
+      border-left: 4px solid var(--green);
+      border-radius: 0 12px 12px 0;
+      padding: 28px 32px;
+      margin: 40px 0;
+    }
+
+    .quote-teksti {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--blue);
+      line-height: 1.6;
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .quote-henkilo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .quote-avatar {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .story-img { margin: 32px auto; text-align: center; }
+    .story-img img { max-width: 100%; width: 420px; height: auto; border-radius: 12px; }
+
+    .company-info {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 2px solid var(--offwhite);
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* --- TAKAISIN-PAINIKE --- */
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 48px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 0;
+      padding: 12px 20px;
+      background: var(--green);
+      color: var(--white);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background .2s;
+    }
+
+    .back-btn:hover { background: #178a42; }
+
+    /* --- FOOTER --- */
+    footer {
+      background: var(--blue);
+      color: #a8bcc8;
+      text-align: center;
+      padding: 32px 2rem;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    .byline { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+    .byline-kuva { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .byline-nimi { font-size: 16px; font-weight: 700; color: var(--blue); }
+    .byline-rooli { font-size: 14px; color: var(--muted); }
+
+    .cta-box {
+      background: var(--white);
+      border-left: 4px solid var(--green);
+      border-radius: 0 12px 12px 0;
+      padding: 28px 32px;
+      margin: 48px 0 0;
+    }
+    .cta-box p { margin-bottom: 12px; }
+    .cta-box .cta-otsikko { font-size: 18px; font-weight: 700; color: var(--blue); }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Boogi – Asiakastarina – Hailer",
+    "description": "Boogi rakensi tapahtumatalojen ohjelmiston Hailerin päälle. Eeka Mäkynen kertoo, miksi oman teknologia-alustan sijaan kannatti keskittyä omaan tuotteeseen ja asiakkaisiin.",
+    "url": "https://www.hailerreferences.com/tarinat/boogi.html",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.hailerreferences.com/tarinat/boogi.html"
+    },
+    "inLanguage": "fi",
+    "datePublished": "2026-11-12",
+    "dateModified": "2026-11-12",
+    "image": "https://www.hailerreferences.com/kuvat/boogi-hero.jpg",
+    "about": {
+      "@type": "Organization",
+      "name": "Boogi",
+      "description": "Tapahtumatalojen ohjelmisto, joka on rakennettu Hailer-alustan päälle."
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Hailer Oy"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Hailer Oy",
+      "description": "Hailer on prosessialusta, joka yhdistää työnkulut, projektit ja viestinnän yhteen paikkaan. Asiakkaan prosessit ohjaavat järjestelmää, ei toisin päin.",
+      "url": "https://www.hailer.com"
+    },
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": "Asiakastarinat – Hailer",
+      "url": "https://www.hailerreferences.com/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="../index.html">Hailer <span>●</span></a>
+    <a class="nav-back" href="../index.html">← Kaikki tarinat</a>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-toimiala">Tapahtuma-ala &amp; ohjelmistoliiketoiminta</div>
+    <h1>Boogi</h1>
+    <p class="hero-kuvaus">Kun oma idea saa tilaa kasvaa – Boogi rakentaa ohjelmistoliiketoimintaa Hailerin päälle</p>
+  </div>
+
+  <div class="content">
+
+    <div class="byline">
+      <img class="byline-kuva" src="../kuvat/boogi-eeka-makynen.jpg" alt="Eeka Mäkynen">
+      <div>
+        <div class="byline-nimi">Eeka Mäkynen</div>
+        <div class="byline-rooli">Boogi</div>
+      </div>
+    </div>
+
+    <p>Oman ohjelmistotuotteen kehittäminen ei välttämättä edellytä oman teknologia-alustan rakentamista. Tapahtuma-alan tarpeista syntynyt Boogi on esimerkki siitä, miten toimialaosaaminen, olemassa oleva teknologia ja oikeanlainen kumppanuus voivat luoda perustan oman liiketoiminnan kehittämiselle ja kasvulle.</p>
+    <p>Vuosia kehitetty ohjelmisto, kymmeniä asiakkaita ja merkittävästi investoitua aikaa ja rahaa. Eeka Mäkysellä oli käsissään toimiva tapahtumatalojen ohjelmisto, Boogi.</p>
+    <p>Mutta jokin oli muuttumassa.</p>
+    <p>Ohjelmistoa oli kehitetty vuosien ajan yhden ohjelmoijan voimin. Uusia ominaisuuksia tarvittiin jatkuvasti, mutta jokainen muutos alkoi tehdä kokonaisuudesta entistä vaikeammin hallittavan.</p>
+    <p>Eeka vertaa järjestelmää korttitaloon. Ohjelmisto toimi edelleen, mutta sen tulevaisuuden rakentaminen alkoi vaatia uudenlaista ratkaisua.</p>
+    <p>Edessä oli merkittävä liiketoiminnallinen päätös: jatkaako oman teknologian kehittämistä vai siirtääkö Boogi toisen yrityksen alustalle?</p>
+    <p>"Softa ei enää ookaan mun. Vaan sit se on rakennettu toisen päälle", Eeka kuvaa muutosta.</p>
+    <p>Hän kutsuu päätöstä luottamuksen harppaukseksi, leap of trust.</p>
+    <p>Kyseessä ei kuitenkaan ollut Boogista, asiakkaista tai liiketoiminnasta luopuminen vaan tarkoituksena oli löytää teknologinen perusta, jonka varassa kehittyminen olisi mahdollista.</p>
+    <h2>Kun sopivaa ratkaisua ei ollut, sellainen piti tehdä itse</h2>
+    <p>Eeka Mäkysen ura tapahtuma-alalla alkoi jo teini-ikäisenä Vaasassa. Kun omalle bändille tarvittiin keikkoja, niitä alettiin järjestää itse. Vuosien mittaan tapahtumien järjestämisestä tuli ammatti.</p>
+    <p>Helsingin Nosturilla työskennellessään Eeka tunnisti ongelman, joka oli tuttu monelle tapahtumatalolle: tärkeä tieto oli hajallaan sähköposteissa, tulosteissa ja yksittäisten työntekijöiden takana.</p>
+    <p>"Se oli liian helposti muutaman ihmisen näpeissä se koko homma. Jos joku on pois pelistä, niin sitten se koko ketju lamaantuu", Eeka kuvaa tilannetta.</p>
+    <p>Sopivaa järjestelmää tiedon ja viestinnän keskittämiseen ei löytynyt, joten ratkaisu päätettiin rakentaa itse.</p>
+    <p>Eekalla oli näkemys siitä, miten järjestelmän pitäisi toimia. Mukana ollut tuottaja hahmotteli toimintoja ruutupaperille ja toteutusta varten löydettiin ohjelmoija. Ensimmäinen Boogi syntyi noin vuonna 2010 oman tapahtumatalon käyttöön.</p>
+    <p>Kun muut tapahtumajärjestäjät näkivät ohjelmiston, he alkoivat kysellä, voisivatko saada saman ratkaisun käyttöönsä.</p>
+    <div class="quote">
+      <div class="quote-teksti">"Se oli aika hauskaa, että se tehtiin siis tarkoitukseen meille, ja sitten asiakkaat alkoivat soittelemaan, että mekin halutaan se."</div>
+      <div class="quote-henkilo"><img class="quote-avatar" src="../kuvat/boogi-eeka-makynen.jpg" alt="Eeka Mäkynen">Eeka Mäkynen, Boogi</div>
+    </div>
+    <p>Omaan tarpeeseen kehitetystä ratkaisusta kasvoi itsenäinen ohjelmistotuote, jolla oli oma asiakaskuntansa.</p>
+    <h2>Mitä kannattaa rakentaa itse – ja mitä ei?</h2>
+    <p>Boogi kasvoi, sai uusia asiakkaita ja kehittyi vuosien ajan. Samalla alkuperäisen ohjelmiston tekninen rakenne alkoi muodostua kehittämisen esteeksi.</p>
+    <p>Eeka ryhtyi kartoittamaan vaihtoehtoja ja keskusteli useiden ohjelmistoyritysten kanssa. Tapahtuma-alan tuttavan vinkistä hän päätyi tapaamaan myös porvoolaisen Hailerin edustajia.</p>
+    <p>Tapaamisessa käytiin läpi Boogin toimintaa, kalenterikeskeistä rakennetta ja tapahtumatalojen erityisiä tarpeita. Hailerin vastaus yllätti: suuri osa tarvittavista ominaisuuksista oli alustalla jo valmiina ja asiantuntijoiden avulla toiminnallisuuksia voitiin rakentaa ja järjestää niin, että toimintalogiikka säilyi.</p>
+    <p>Kyse ei ollut vain vanhan ohjelmiston korvaamisesta uudella. Tapahtuma-alan tarpeisiin kehitetty tuote sai teknologisen perustan, jota voidaan mukauttaa myös yksittäisten asiakkaiden toimintaan. Kaikkea ei tarvinnut rakentaa uudelleen.</p>
+    <p>Teknisen muutoksen rinnalla tapahtui jotain liiketoiminnallisesti olennaista.</p>
+    <p>Boogin oma tuote, asiakkaat ja toimialaosaaminen säilyivät. Sen sijaan oman teknologia-alustan kehittäminen ja ylläpitäminen eivät enää olleet samalla tavalla liiketoiminnan perustana.</p>
+    <p>Mikä omassa ohjelmistossa on liiketoiminnan kannalta tärkeintä: teknologian omistaminen vai mahdollisuus kehittää sen avulla omaa tuotetta ja liiketoimintaa?</p>
+    <p>Boogin tapauksessa oman teknologian vaihtaminen ei tarkoittanut omasta ideasta luopumista. Se tarjosi uuden perustan idean kehittämiselle.</p>
+    <h2>Kun teknologia mahdollistaa jotain, mitä ei osattu edes toivoa</h2>
+    <p>Hailerille siirtyminen toi mukanaan myös jotakin odottamatonta.</p>
+    <p>Alkuperäisen Boogin keskeinen tehtävä oli keskittää tapahtumatalon tieto ja viestintä. Hailerin mukana ratkaisuun saatiin mahdollisuus käydä keskusteluja suoraan niihin liittyvien tapahtumien, tehtävien ja aktiviteettien yhteydessä.</p>
+    <p>Tämä oli yksi uuden toteutuksen merkittävimmistä hyödyistä, jota ei oltu osattu etukäteen edes ajatella.</p>
+    <p>Kun keskustelu käydään suoraan esimerkiksi tiettyyn tapahtumaan tai lipunmyynnin tehtävään liittyen, sitä ei tarvitse etsiä erillisistä viestikanavista. Tieto säilyy sen asian yhteydessä, jota se koskee.</p>
+    <p>Eeka kertoo turhautumisestaan muissa työssään käyttämissään viestintäympäristöissä. Hän kuvaa tilannetta, jossa tietää saaneensa vastauksen kysymykseensä, mutta ei enää löydä sitä, missä keskustelu käytiin. Hailerissa hän arvostaa juuri sitä, että keskustelu pysyy kiinni itse asiassa.</p>
+    <p>Tämä kertoo jotain olennaista myös kumppanuudesta. Toimialansa tunteva yrittäjä tietää, mitä hänen asiakkaansa tarvitsevat. Hänen ei kuitenkaan tarvitse tuntea etukäteen kaikkia teknologian mahdollisuuksia. Teknologiakumppani voi tuoda toteutukseen jotain sellaista, mitä alkuperäisessä suunnitelmassa ei vielä ollut.</p>
+    <p>Parhaimmillaan yhteistyössä ei vain toteuteta olemassa olevaa ideaa vaan sen aikana voi syntyä myös uusia ajatuksia siitä, mitä kannattaisi tehdä.</p>
+    <h2>By us, for us – toimialan tuntemisesta syntyy kilpailuetua</h2>
+    <p>Boogin kehittämisessä on alusta asti ollut keskeistä tapahtuma-alan tunteminen ja asiakkaiden kuunteleminen. Tiivistetysti ajatuksena on by us, for us. Tapahtuma-alalle suunniteltua ratkaisua kehittävät ihmiset, jotka tuntevat alan toimintatavat ja sen todelliset tarpeet.</p>
+    <p>Eeka tuntee tapahtumatalojen arjen ja toimii edelleen aktiivisesti alalla muun muassa Tuska-festivaalin toimitusjohtajana.</p>
+    <p>Kun ratkaisu on syntynyt tapahtuma-alan sisältä ja sitä kehitetään alan toimijoiden kanssa, asiakkaan ei tarvitse aloittaa kaikkien tarpeidensa määrittelyä tyhjästä.</p>
+    <div class="quote">
+      <div class="quote-teksti">"Tosi moni arvostaa sitä, että joku muu on tehnyt ajattelutyön sinun puolesta."</div>
+      <div class="quote-henkilo"><img class="quote-avatar" src="../kuvat/boogi-eeka-makynen.jpg" alt="Eeka Mäkynen"></div>
+    </div>
+    <p>Boogi tarjoaa tapahtuma-alan tarpeisiin valmiiksi mietityn tuotteen, jota voidaan mukauttaa asiakaskohtaisesti. Vaikka tapahtumatalojen toiminnassa on paljon yhteistä, niiden tarpeet voivat erota toisistaan. Yhdelle tärkeintä on myynti, toiselle tuotannon hallinta, kolmannelle varauskalenteri tai turvallisuuteen liittyvät prosessit.</p>
+    <p>Eekan mukaan Boogin kehitys on perustunut jatkuvaan vuoropuheluun asiakkaiden kanssa.</p>
+    <div class="quote">
+      <div class="quote-teksti">"Ensin on syntynyt se ensimmäinen versio siihen tarpeeseen, mutta sen jälkeen se koko tarina on käsikirjoitettu yhdessä asiakkaiden kanssa."</div>
+      <div class="quote-henkilo"><img class="quote-avatar" src="../kuvat/boogi-eeka-makynen.jpg" alt="Eeka Mäkynen"></div>
+    </div>
+    <p>Yksittäisen tapahtumatalon toiminta ei kuitenkaan aina mahdu yhden valmiin ohjelmiston rakenteisiin. Boogin tarjoamaa lähtökohtaa voidaan täydentää Hailerin alustalla asiakkaan omien prosessien ja tarpeiden mukaisesti. Tässä Hailerin muokattavuus nousee keskeiseen rooliin.</p>
+    <p>Boogi tuo kumppanuuteen oman tuotteensa, asiakkaansa ja tapahtuma-alan tuntemuksen. Hailer puolestaan tarjoaa teknologisen perustan sekä asiantuntemusta, jonka avulla ratkaisua voidaan mukauttaa ja kehittää.</p>
+    <h2>Hailerin merkitys syntyy asiakkaan tavoitteesta</h2>
+    <p>Eeka näkee Hailerin alustana, jonka päälle voi rakentaa omaa ohjelmistoliiketoimintaa. Samaan aikaan hän on haastanut Haileria sen asemoinnista. Jos samalla teknologialla voidaan tehdä hyvin erilaisia asioita, kuinka potentiaalinen asiakas ymmärtää, mitä sillä voisi tehdä juuri omassa liiketoiminnassaan?</p>
+    <p>Boogin kohdalla vastaus on konkreettinen.</p>
+    <p>Hailerin teknologia ei rajoita ratkaisua vain Boogin alkuperäisiin toiminnallisuuksiin vaan sen päälle voidaan rakentaa asiakaskohtaisia työnkulkuja, näkymiä ja muita toimintoja. Parasta on, että jokainen uusi tarve ei edellytä kokonaan uuden järjestelmän kehittämistä. Myös kehitystyö on nopeutunut. Eeka kuvaa esimerkiksi tekoälyavusteisesti toteutettavia kalenterinäkymiä, jotka ovat aiemmin vaatineet erillistä ohjelmistokehitystä.</p>
+    <p>Kumppanuuden merkitys ei siis ole vain siinä, että Boogilla on käytössään valmis alusta. Se on myös mahdollisuus kehittää ja laajentaa omaa tuotetta teknologiaosaamisen avulla.</p>
+    <h2>Boogin seuraava kasvuvaihe</h2>
+    <p>Boogin tarina ei pääty nykyiseen tapahtumataloille tarkoitettuun ohjelmistoon vaan suunnitelmissa on laajentuminen tuoteperheeksi, joka palvelisi tapahtuma- ja kulttuurialan erilaisia toimijoita. Tämä voisi tarkoittaa ratkaisuja muun muassa agentuureille, kiertuetoimintaan, festivaaleille ja museoille.</p>
+    <p>Monet näistä ajatuksista ovat syntyneet alan toimijoiden esittämistä tarpeista.</p>
+    <p>Eeka kuvaa esimerkiksi tulevaisuutta, jossa tapahtumatalo ja tapahtumia järjestävä toimija voisivat käyttää samaan teknologiseen perustaan rakentuvia ratkaisuja. Kiertueen suunnittelu, tapahtumapaikkojen kanssa käytävä viestintä ja siihen liittyvät sopimukset voisivat silloin liittyä samaan kokonaisuuteen.</p>
+    <p>Kyse on vielä kehityssuunnasta, mutta se havainnollistaa, miten yhdestä toimialan tarpeeseen syntyneestä tuotteesta voidaan lähteä rakentamaan laajempaa liiketoimintaa.</p>
+    <p>Kysyttäessä neuvoa sellaiselle yrittäjälle, jolla on oma ohjelmistoidea, mutta ei tiedä mistä aloittaa, palaa Eeka ajatukseen, jonka merkityksen on itse Boogin kanssa tunnistanut:</p>
+    <div class="quote">
+      <div class="quote-teksti">”No mun mielestä toi ajatus siitä, että esimerkiksi Hailer alustana mahdollistaa oikeasti sitä skaalautuvaa liiketoimintaa.”</div>
+      <div class="quote-henkilo"><img class="quote-avatar" src="../kuvat/boogi-eeka-makynen.jpg" alt="Eeka Mäkynen"></div>
+    </div>
+    <p>Boogin tarina alkoi tarpeesta ratkaista oman tapahtumatalon ongelma. Nyt sen tulevaisuudessa siintää kokonainen tuoteperhe, jonka mahdollisuuksia ei ensimmäistä ohjelmistoa rakennettaessa vielä osattu kuvitella.</p>
+    <p>Entä jos teknologian tärkein mahdollisuus ei olekaan vain toteuttaa sitä, mitä jo osaamme kuvitella – vaan auttaa näkemään, mitä kaikkea voisimme tehdä seuraavaksi?</p>
+
+    <div class="cta-box">
+      <p class="cta-otsikko">Onko sinulla toimialaosaamista ja idea omasta ohjelmistotuotteesta?</p>
+      <p>Keskustellaan, miten Hailer voisi tukea sen toteuttamista.</p>
+      <a class="back-btn" href="https://form.hailer.com/846f393a84406e85dbc150ffdfff8352" target="_blank" rel="noopener">Ota yhteyttä</a>
+    </div>
+
+    <div class="btn-row">
+      <a class="back-btn" href="../index.html">← Takaisin kaikkiin tarinoihin</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 <a href="https://www.hailer.com">Hailer Oy</a> &nbsp;|&nbsp; Rihkamatori 2, 06100 Porvoo</p>
+  </footer>
+
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
